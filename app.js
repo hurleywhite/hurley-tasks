@@ -102,7 +102,7 @@ const TodoApp = () => {
     done: { label: 'Done', color: '#16a34a', bg: '#f0fdf4', icon: '✓' }
   };
 
-  const reviewers = ['Verma', 'Thor', 'Jerome'];
+  const reviewers = ['Verma', 'Thor', 'Jerome', 'Zach', 'Joe', 'Scott'];
 
   const handleLogin = () => {
     if (!userNameInput.trim()) return;
@@ -341,7 +341,7 @@ const TodoApp = () => {
             <input
               className="input-field"
               style={{ width: '100%' }}
-              placeholder="e.g., Hurley, Verma, Thor, Jerome..."
+              placeholder="e.g., Hurley, Verma, Thor, Jerome, Zach, Joe, Scott..."
               value={userNameInput}
               onChange={(e) => setUserNameInput(e.target.value)}
               onKeyDown={(e) => e.key === 'Enter' && handleLogin()}
